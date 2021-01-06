@@ -38,3 +38,8 @@
     top: 100px;
     border-radius: 50%;
 }
+#tap{
+    width: 400px;
+    height: 500px;
+    position: absolute;
+}

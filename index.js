@@ -37,7 +37,7 @@ function jump(){
     let jumpCount = 0;
     var jumpInterval = setInterval(function(){
         var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
-        if((characterTop>6)&&(counter<15)) {
+        if(characterTop>6){
         character.style.top = (characterTop-4)+"px";
         }
         if(jumpCount>20) {

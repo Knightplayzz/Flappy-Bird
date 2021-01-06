@@ -34,7 +34,7 @@ setInterval(function(){
         character.style.top = 100 + "px";
         counter=0;
     }
-},20);
+},10);
 
 function jump(){
     jumping = 1;

@@ -15,6 +15,8 @@ hole.addEventListener('animationiteration', () => {
 
 // Phone function
 
+document.getElementById("tap").addEventListener("touchstart", jump);
+
 // Jumping function
 
 setInterval(function(){
@@ -50,5 +52,3 @@ function jump(){
         jumpCount++;
     },10);
 }
-
-document.getElementById("tap").addEventListener("touchstart", jump);

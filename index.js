@@ -15,8 +15,6 @@ hole.addEventListener('animationiteration', () => {
 
 // Phone function
 
-document.getElementById("tap").addEventListener("touchstart", jump);
-
 // Jumping function
 
 setInterval(function(){
@@ -44,6 +42,13 @@ function jump(){
         if(characterTop>6){
         character.style.top = (characterTop-4)+"px";
         }
+         if(jumpCount>20) {
+            clearInterval(jumpInterval);
+            jumping=0;
+            jumpCount=0;
+        }
         jumpCount++;
     },10);
 }
+
+document.getElementById("tap").addEventListener("touchstart", jump);

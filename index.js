@@ -48,3 +48,4 @@ function jump(){
         jumpCount++;
     },10);
 }
+document.getElementById("tap").addEventListener("touchstart", jump);

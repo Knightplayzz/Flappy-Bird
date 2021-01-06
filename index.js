@@ -34,7 +34,7 @@ setInterval(function(){
         character.style.top = 100 + "px";
         counter=0;
     }
-},10);
+},20);
 
 function jump(){
     jumping = 1;
@@ -44,11 +44,6 @@ function jump(){
         if(characterTop>6){
         character.style.top = (characterTop-4)+"px";
         }
-        if(jumpCount>20) {
-            clearInterval(jumpInterval);
-            jumping=0;
-            jumpCount=0;
-        }
         jumpCount++;
-    },10);
+    },1);
 }
